@@ -79,8 +79,12 @@ public class RedesController {
 			String linha = buffer.readLine();
 			
 			while(linha != null) {
+				if(linha.contains("dia")) {
+					String vetor [] = linha.split(",");
+					System.out.println(vetor[2]);
+				}
 				
-				System.out.println(linha);
+
 				linha = buffer.readLine();
 			}
 			
